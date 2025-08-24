@@ -1,0 +1,36 @@
+main:
+  - name: "Year 7"
+    url: "/Y7/"
+    weight: 2
+  - name: "Year 8"
+    url: "/Y8/"
+    weight: 3
+  - name: "Year 9"
+    url: "/Y9/"
+    weight: 4
+  - name: "IGCSE Computer Science"
+    url: "/IGCSE/"
+    weight: 5
+  - name: "IBDP Computer Science"
+    url: "/IBDP/"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Year 7"
+    url: "/Y7/"
+    weight: 2
+  - name: "Year 8"
+    url: "/Y8/"
+    weight: 3
+  - name: "Year 9"
+    url: "/Y9/"
+    weight: 4
+  - name: "IGCSE Computer Science"
+    url: "/IGCSE/"
+    weight: 5
+  - name: "IBDP Computer Science"
+    url: "/IBDP/"
+    weight: 6
