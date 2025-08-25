@@ -50,6 +50,10 @@ Stores intermediate results of calculations performed by the ALU. Often used as 
 - <a href="https://nordanglia-my.sharepoint.com/:w:/g/personal/elliott_rees_nais_hk/EYAb8dEbeypHmX6pGt2MIysBDezDLFZl3uNWHibq40IhkA?download=1">Lesson Worksheet</a>
 - <a href="https://nordanglia-my.sharepoint.com/:w:/g/personal/elliott_rees_nais_hk/ETeBkfkr5-tDnu2GuzyJoYcBrO_bCvyqSJ13ifbyK5hr5A?download=1">Lesson Worksheet Answers</a>
 
+
+
+<hr>
+
 # Lesson 2 - Graphics Processing Units & Cores
 
 ## What is a core?
@@ -81,6 +85,7 @@ Unlike a CPU, which has a few powerful cores for general tasks, a GPU has hundre
 
 Example: Rendering a 3D scene in a video game involves calculating lighting, textures, and movement for millions of pixels—GPU cores do this in parallel.
 
+<hr>
 
 # Lesson 2.5 (HL Only) - The difference between a CPU and a GPU
 
@@ -132,7 +137,64 @@ especially when rendering videos or running complex simulations.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h9Z4oGN89MU?si=bVyrwfzZKMvihRg2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </p>
 
-# Lesson 3 - Primary Memory
+<hr>
+
+
+# Lesson 3 - Visualsation of the Fetch - Decode - Execution Cycle
+
+
+The fetch—decode—execute cycle, also known as the “instruction cycle”, is the fundamental
+process that a CPU uses to execute instructions. The cycle consists of three main stages:
+- 1 Fetch: The CPU fetches an instruction from the memory.
+- 2 Decode: The CPU interprets the instruction and prepares the necessary operations to execute it.
+- 3 Execute: The CPU performs the actions required by the instruction. 
+
+
+An easier way to see these stages carried out in more detail is to use an educational CPU model
+known as Little Man Computer, which you can search for online or use the one available
+here: https://peterhigginson.co.uk/Imc. This model uses assembly language — a simple set of
+instructions, each represented by three letters, which is stored as a three-digit code in the
+memory. The full set of instructions is: 
+
+<p align="center">
+<img src="/images/illustrations/lmc.png" alt="My Logo" width= "auto" height="auto">
+</p>
+
+
+
+## Activity 1: Copy and run the following code in the LMC. 
+<p align="center">
+<img src="/images/illustrations/lmc1.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+After hitting submit, you should see the memory the instructions loaded into memory address 1, memory address 2 and memory address three. There are now three isntructions for our Program counter to work through, which will take three instruction cycles in our single core CPU to work through.
+
+Hit run to see each instruction be fetched, decoded and executed. The INP command waits for the user to input a value which will be held temporarily in the accumulator. The STA 10 command will store the content of the accumulator into memory location 10.
+
+
+## Activity 2: Ammend your code to look like the following:
+<p align="center">
+<img src="/images/illustrations/lmc2.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+Can you see what this program is doing?
+
+
+## Challenges
+- Write a program that adds three number together and outputs the result.
+- Write a program that takes two inputers and subtracts the second from the first.
+- Write a program which outputs the larger of two input values.
+- Write a program that outputs the largest of three input values.
+- Write a program which takes three numbers and outputs them in ascending order.
+- Write a program which takes in two numbers and subtracts the second from the first. If the result is negative, the program should output the value 0.
+- Write a program which counts down from any input value.
+- Write a program which multiplies two numbers.
+
+
+<hr>
+
+
+# Lesson 4 - Primary Memory
 
 Primary memory is memory which is directly accessed by the CPU. It generally stores instructions for the CPU to fetch, decode and execute as well data (numbers,  text, images, sound ect...) which the user currently has open. Some primary memory is volatile (loses memory when the power is removed) and some is non-volatile (rememebrs even after power is lost.)
 
@@ -175,7 +237,7 @@ cores). It is the slowest of the three types of caches, but is still significant
 </p>
 
 
-# Cache Hit and Cache Hit
+# Cache Hit and Cache Miss
 
 The terms cache hit and cache miss are used to describe the efficiency of the CPU’s cache
 memory when retrieving data. A cache hit is the ideal scenario, where the CPU requests data
@@ -209,13 +271,69 @@ ROM is non-volatile to ensure that the BIOS is never deleted or overwritten.
 
 
 
-
+<hr>
 
 # Lesson 4 - Visualsation of the Fetch - Decode - Execution Cycle
 
+
+The fetch—decode—execute cycle, also known as the “instruction cycle”, is the fundamental
+process that a CPU uses to execute instructions. The cycle consists of three main stages:
+- 1 Fetch: The CPU fetches an instruction from the memory.
+- 2 Decode: The CPU interprets the instruction and prepares the necessary operations to execute it.
+- 3 Execute: The CPU performs the actions required by the instruction. 
+
+
+An easier way to see these stages carried out in more detail is to use an educational CPU model
+known as Little Man Computer, which you can search for online or use the one available
+here: https://peterhigginson.co.uk/Imc. This model uses assembly language — a simple set of
+instructions, each represented by three letters, which is stored as a three-digit code in the
+memory. The full set of instructions is: 
+
+<p align="center">
+<img src="/images/illustrations/lmc.png" alt="My Logo" width= "auto" height="auto">
+</p>
+
+
+
+## Activity 1: Copy and run the following code in the LMC. 
+<p align="center">
+<img src="/images/illustrations/lmc1.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+After hitting submit, you should see the memory the instructions loaded into memory address 1, memory address 2 and memory address three. There are now three isntructions for our Program counter to work through, which will take three instruction cycles in our single core CPU to work through.
+
+Hit run to see each instruction be fetched, decoded and executed. The INP command waits for the user to input a value which will be held temporarily in the accumulator. The STA 10 command will store the content of the accumulator into memory location 10.
+
+
+## Activity 2: Ammend your code to look like the following:
+<p align="center">
+<img src="/images/illustrations/lmc2.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+Can you see what this program is doing?
+
+
+## Challenges
+- Write a program that adds three number together and outputs the result.
+- Write a program that takes two inputers and subtracts the second from the first.
+- Write a program which outputs the larger of two input values.
+- Write a program that outputs the largest of three input values.
+- Write a program which takes three numbers and outputs them in ascending order.
+- Write a program which takes in two numbers and subtracts the second from the first. If the result is negative, the program should output the value 0.
+- Write a program which counts down from any input value.
+- Write a program which multiplies two numbers.
+
+
+<hr>
+
 # Lesson 4.5 (HL Only) - The Process of Pipelining in Multi-Core Architectures
+
+<hr>
 
 # Lesson 5 - Secondary Storage Devices & Cloud Computing
 
+<hr>
+
 # Lesson 6 - Data Compression
 
+<hr>
