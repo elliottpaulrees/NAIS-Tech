@@ -123,3 +123,19 @@ body hr {
   margin: 3em 0;
 }
 
+
+.highlight {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: monospace;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.highlight pre {
+  margin: 0;
+}
+

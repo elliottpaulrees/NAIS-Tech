@@ -7,10 +7,10 @@ bodyClass: page-about
 
 # Lesson 0 - Setting up your development environment
 
-## Python Interpretter
-An intepretter is a translator which can be used to turn your python code into machine code which the computer can run.
+## Python Interpreter
+An interpreter is a translator which can be used to turn your python code into machine code which the computer can run.
 
-- Download the python interpretter from the following link: https://python.org
+- Download the python intepreter from the following link: https://python.org
 
 ## Integrated Development Environment
 An IDE, or Integrated Development Environment, is a software application that brings together all the essential tools a programmer needs to write, test, and debug code — all in one place.
@@ -32,10 +32,10 @@ Use the following URL for support: https://www.geeksforgeeks.org/python/python-c
 
 Build a "Digital ID Card" program that asks for name, year, date of birth, whether they can go offsite and account balance and then prints a formatted summary.
 
-### Activity 1: Add the following functionality to your program shoud:
+### Activity 1: Add the following functionality to your program should:
 - Inform the user what you want them to enter.
 - Collect data from the user in the correct data type
-- Output the data to the consol in a formatted way using the print command.
+- Output the data to the console in a formatted way using the print command.
 - Write the data to a .txt file for future processing.
 
 Add a screenshot of your code to formative.
@@ -44,12 +44,12 @@ Add a screenshot of your code to formative.
 
 A type check can be used to check the data type of data entered. If its not what we expect, we can reject the input.
 
-<pre>
-python
-balance = 58.75
+```python
+balance = 58.7
 if isinstance(balance, float):
     print("Balance is a float.")
-</pre>
+```
+
 
 - Validate the user input using a type check.
 - Validate the user year level and account balance inputs using a range check.
@@ -65,7 +65,7 @@ Today, we're diving back into the power of programmatic decision-making. We'll m
 ### Activity 1
 Your task is to analyze the code snippet below. Run it several times with different inputs to reverse-engineer its logic. How does it use these operators to change the program's state and output? Your goal is to understand and explain the precise conditions that trigger each outcome.
 
-<pre>
+```python
 # Global variables for the player's state
 player_health = 50
 player_has_key = False
@@ -104,10 +104,11 @@ def challenge_room():
     except ValueError:
         print("That's not a valid number!")  # != int
 
+
 # Start of program
 challenge_room()
 
-</pre>
+```
 
 ### Activity 2
 
@@ -120,7 +121,7 @@ Continue developing the above program to build your own interactive adventure!
 
 
 ### Activity 1
- This is a question of probability. Write a functions that roles a dice an amount of times specified by the user and logs each fall. Calculate the likelyhood of each number falling. 
+ This is a question of probability. Write a function that rolls a dice an amount of times specified by the user and logs each fall. Calculate the likelihood of each number falling. 
 
 The probability (or, more precisely, the empirical probability or relative frequency) of rolling a specific number is calculated as:
 
