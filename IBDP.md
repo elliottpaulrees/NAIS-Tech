@@ -10,7 +10,7 @@ bodyClass: page-about
 - A3: Databases
 - A4: Machine learning
 - B1: Computational thinking
-- B2: Programming
+- [B2: Programming](\ibdp_python)
 - B3: Object oriented programming
 - B4: Abstract data types
 - Case study

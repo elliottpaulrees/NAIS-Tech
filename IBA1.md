@@ -273,59 +273,6 @@ ROM is non-volatile to ensure that the BIOS is never deleted or overwritten.
 
 <hr>
 
-# Lesson 4 - Visualsation of the Fetch - Decode - Execution Cycle
-
-
-The fetch—decode—execute cycle, also known as the “instruction cycle”, is the fundamental
-process that a CPU uses to execute instructions. The cycle consists of three main stages:
-- 1 Fetch: The CPU fetches an instruction from the memory.
-- 2 Decode: The CPU interprets the instruction and prepares the necessary operations to execute it.
-- 3 Execute: The CPU performs the actions required by the instruction. 
-
-
-An easier way to see these stages carried out in more detail is to use an educational CPU model
-known as Little Man Computer, which you can search for online or use the one available
-here: https://peterhigginson.co.uk/Imc. This model uses assembly language — a simple set of
-instructions, each represented by three letters, which is stored as a three-digit code in the
-memory. The full set of instructions is: 
-
-<p align="center">
-<img src="/images/illustrations/lmc.png" alt="My Logo" width= "auto" height="auto">
-</p>
-
-
-
-## Activity 1: Copy and run the following code in the LMC. 
-<p align="center">
-<img src="/images/illustrations/lmc1.png" alt="My Logo" width="50%" height="auto">
-</p>
-
-After hitting submit, you should see the memory the instructions loaded into memory address 1, memory address 2 and memory address three. There are now three isntructions for our Program counter to work through, which will take three instruction cycles in our single core CPU to work through.
-
-Hit run to see each instruction be fetched, decoded and executed. The INP command waits for the user to input a value which will be held temporarily in the accumulator. The STA 10 command will store the content of the accumulator into memory location 10.
-
-
-## Activity 2: Ammend your code to look like the following:
-<p align="center">
-<img src="/images/illustrations/lmc2.png" alt="My Logo" width="50%" height="auto">
-</p>
-
-Can you see what this program is doing?
-
-
-## Challenges
-- Write a program that adds three number together and outputs the result.
-- Write a program that takes two inputers and subtracts the second from the first.
-- Write a program which outputs the larger of two input values.
-- Write a program that outputs the largest of three input values.
-- Write a program which takes three numbers and outputs them in ascending order.
-- Write a program which takes in two numbers and subtracts the second from the first. If the result is negative, the program should output the value 0.
-- Write a program which counts down from any input value.
-- Write a program which multiplies two numbers.
-
-
-<hr>
-
 # Lesson 4.5 (HL Only) - The Process of Pipelining in Multi-Core Architectures
 
 <hr>
@@ -337,3 +284,4 @@ Can you see what this program is doing?
 # Lesson 6 - Data Compression
 
 <hr>
+
