@@ -2,6 +2,14 @@ baseurl: '/'
 permalink: pretty
 title: 'NAIS HK Technology'
 
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 logo:
   mobile: "images/logo/NAE_logo.png"
   mobile_height: "32px"
