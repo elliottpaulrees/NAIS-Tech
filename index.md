@@ -9,8 +9,6 @@ show_call_box: true
 bodyClass: page-about
 ---
 
-# Leave a Legacy
-
 Welcome to the NAIS HK Technology Hub — your central space for exploring course information, lesson resources, and extracurricular opportunities in digital learning. Whether you're diving into coding, robotics, design thinking, or tech-focused clubs, this site is designed to keep everything organized, accessible, and up to date. Our goal is to support students and families with clear pathways into the exciting world of technology at Nord Anglia International School Hong Kong.
 
 Use the links at the top of the page to find out more about your course or ECA, including lesson information and key dates, project details, resources, and how to get involved. Whether you're looking to stay on track with your tech lessons or dive deeper into extracurriculars, everything you need is just a click away.
