@@ -275,6 +275,73 @@ ROM is non-volatile to ensure that the BIOS is never deleted or overwritten.
 
 # Lesson 4.5 (HL Only) - The Process of Pipelining in Multi-Core Architectures
 
+Pipelining is a powerful technique used in multi-core architectures to enhance CPU
+performance by overlapping the execution of multiple instructions. To understand this
+concept, imagine a carwash service that processes cars through several stages: initial wash,
+detailed cleaning, rinse and drying. Each stage takes five minutes. 
+
+
+ A carwash team operating in parallel execution to get the job done faster 
+
+
+<p align="center">
+<img src="/images/illustrations/pipe1.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+
+ In a non-pipelined operation, each car must complete all stages before the next car begins: 
+
+<p align="center">
+<img src="/images/illustrations/pipe2.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+
+The total time it takes to process two cars is 5 x 8 = 40 minutes. So the time to clean one car is
+40/ 2 = 20 minutes.
+
+The problem with this system is that, once car A has had the initial wash, that stage is then left
+idle, waiting for car A to complete, before car B enters. This is not efficient and, if we continue with
+this system, the only way we can improve the operation is to increase the speed of each stage.
+
+It is the same situation with the performance of a CPU, where we are limited by the speed of
+the hardware, and improving this can be very expensive. Being more efficient with what we
+have is more beneficial.
+
+In a pipelined solution, as soon as car A finishes a stage, car B enters that stage: 
+
+<p align="center">
+<img src="/images/illustrations/pipe3.png" alt="My Logo" width="50%" height="auto">
+</p>
+
+The total time it takes to process two cars is 5 x 5 = 25 minutes. So the time to clean one car is
+25/2 = 12.5 minutes.
+
+In this pipelined solution, rather than one stage sitting idle until the cycle is complete, the
+moment it is finished with car A, car B enters thar stage. 
+
+### Design of a basic pipeline
+
+In a pipelined processor, the pipeline consists of multiple stages or segments situated between
+an input end and an output end. Each stage performs a specific operation, and the ourput of
+one stage becomes the input for the next. Intermediate outputs are held in interface registers,
+also known as “latches” or “buffers”. All stages and interface registers are synchronized by a
+common clock, ensuring co-ordinated operation across the entire pipeline. 
+
+In the CPU, the fetch—decode—execute cycle is divided into distinct stages: 
+
+1. Fetch: The instruction is retrieved from memory.
+2. Decode: The instruction is interpreted to understand the required operation.
+3. Execute: The operation is carried out.
+4. Memory access: Any necessary data is read from or written to memory.
+5. Write back: The result is written back to the CPU register. 
+
+
+Rather than measuring performance in minutes, as in the carwash example, pipeline performance in CPUs is measured in cycles. To manage the five stages mentioned, the CPU is constructed ith five-stage instruction pipeline, ensuring continuous and efficient processing of instructions. A well optimised pipeline can achieve close to one instruction per cycle, maximizing the CPU’s performance by reducing idle times and ensuring continuous instruction processing. 
+
+<p align="center">
+<img src="/images/illustrations/pipe4.png" alt="My Logo" width="50%" height="auto">
+</p>
+
 <hr>
 
 # Lesson 5 - Secondary Storage Devices & Cloud Computing
