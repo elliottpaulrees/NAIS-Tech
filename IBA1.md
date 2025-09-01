@@ -275,10 +275,7 @@ ROM is non-volatile to ensure that the BIOS is never deleted or overwritten.
 
 # Lesson 4.5 (HL Only) - The Process of Pipelining in Multi-Core Architectures
 
-Pipelining is a powerful technique used in multi-core architectures to enhance CPU
-performance by overlapping the execution of multiple instructions. To understand this
-concept, imagine a carwash service that processes cars through several stages: initial wash,
-detailed cleaning, rinse and drying. Each stage takes five minutes. 
+Pipelining is a powerful technique used in multi-core architectures to enhance CPU performance by overlapping the execution of multiple instructions. To understand this concept, imagine a carwash service that processes cars through several stages: initial wash, detailed cleaning, rinse and drying. Each stage takes five minutes. 
 
 
  A carwash team operating in parallel execution to get the job done faster 
@@ -321,11 +318,7 @@ moment it is finished with car A, car B enters thar stage.
 
 ### Design of a basic pipeline
 
-In a pipelined processor, the pipeline consists of multiple stages or segments situated between
-an input end and an output end. Each stage performs a specific operation, and the ourput of
-one stage becomes the input for the next. Intermediate outputs are held in interface registers,
-also known as “latches” or “buffers”. All stages and interface registers are synchronized by a
-common clock, ensuring co-ordinated operation across the entire pipeline. 
+In a pipelined processor, the pipeline consists of multiple stages or segments situated between an input end and an output end. Each stage performs a specific operation, and the ourput of one stage becomes the input for the next. Intermediate outputs are held in interface registers, also known as “latches” or “buffers”. All stages and interface registers are synchronized by a common clock, ensuring co-ordinated operation across the entire pipeline. 
 
 In the CPU, the fetch—decode—execute cycle is divided into distinct stages: 
 
@@ -341,6 +334,39 @@ Rather than measuring performance in minutes, as in the carwash example, pipelin
 <p align="center">
 <img src="/images/illustrations/pipe4.png" alt="My Logo" width="50%" height="auto">
 </p>
+
+In multi-core architectures, each core can independently execute its own pipeline of instructions. This is similar to having multiple carwash teams, each capable of processing cars simultaneously but independently. They are also capable of parallel execution when
+dealing with larger, more complex tasks, where each team completes a part of a larger task to improve execution time. This combination of pipelining and parallelism significantly boosts computational efficiency, enabling modern processors to handle complex and resourceintensive tasks more effectively.
+
+### Independent execution 
+
+
+Each core in a multi-core processor has its own set of pipelines, allowing it to fetch, decode, execute and write back instructions independently of the other cores. This independence means that, even if one core is handling a computationally intensive task, other cores can continue to execute their tasks without waiting for the first core to finish. This increases overall efficiency and utilization of the CPU resources.
+
+Consider our carwash with multiple bays:
+- Team 1 (Core 1): Car A undergoes initial wash — detailed cleaning — rinse — drying
+- Team 2 (Core 2): Car B undergoes initial wash — detailed cleaning — rinse — drying
+
+While Team 1 is drying car A, Team 2 might be rinsing car B. Both bays operate independently. 
+
+### Parallel execution 
+
+Parallel execution takes the concept further, by allowing multiple cores to work on different parts of a single large task or multiple tasks simultaneously. For instance, in a multi-threaded application, different threads can be scheduled on different cores, with each core processing its thread in parallel. This drastically reduces the time needed to complete complex computations.
+
+Imagine a large car that needs washing, detailing and interior cleaning. Multiple teams (cores) can work on different sections of the car at the same time: 
+- Team 1 (Core 1): Washes the exterior
+- Team 2 (Core 2): Details the interior 
+- Team 3 (Core 3): Cleans the wheels and undercarriage.
+
+Each team works in parallel on different parts of the same car, drastically reducing the overall
+time required to complete the job. 
+
+
+### Key Questions
+1. What is pipelining and how does it improve performance?
+2. How does a non-pipelined CPU differ from a pipelined CPU in terms of instruction execution?
+3. What are the stages of a basic instruction pipeline, and how do they function together in a CPU?
+4. How do multi-core processors use pipelining and parallel execution to improve computational efficiency? 
 
 <hr>
 
