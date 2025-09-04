@@ -36,7 +36,7 @@ Build a "Digital ID Card" program that asks for name, year, date of birth, wheth
 - Inform the user what you want them to enter.
 - Collect data from the user in the correct data type
 - Output the data to the console in a formatted way using the print command.
-- Write the data to a .txt file for future processing.
+- Write the data to a .txt file for future processing. You may want to use the following website for support: https://www.w3schools.com/python/python_file_handling.asp
 
 Add a screenshot of your code to formative.
 
