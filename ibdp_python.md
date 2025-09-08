@@ -36,7 +36,17 @@ Build a "Digital ID Card" program that asks for name, year, date of birth, wheth
 - Inform the user what you want them to enter.
 - Collect data from the user in the correct data type
 - Output the data to the console in a formatted way using the print command.
-- Write the data to a .txt file for future processing. You may want to use the following website for support: https://www.w3schools.com/python/python_file_handling.asp
+- Write the data to a .txt file for future processing. You may want to use the following website for support: <a href="https://www.w3schools.com/python/python_file_handling.asp">https://www.w3schools.com/python/python_file_handling.asp</a>
+
+#### Example
+```python
+# You can create a new string form your collected data to write to the text file. You just need to ensure all data are strings.
+NewString = "name: " +str(name) + " " + "Year Level: " +str(level) + " " + "Allowed offsite: " +str(offsite) + " " + "Account balance: " +str(balance) 
+
+f = open("demofile.txt", "a")
+f.write(NewString + "\n") #the \n adds a new line at the end of the text file so the next write will be one line down.
+f.close()
+```
 
 Add a screenshot of your code to formative.
 
@@ -51,10 +61,10 @@ if isinstance(balance, float):
 ```
 
 
-- Validate the user input using a type check.
-- Validate the user year level and account balance inputs using a range check.
-- Validate the user input using a presence check.
-- Validate the user input using a format check. 
+- Validate the user input using a type check (see seen above in the example)
+- Validate the user year level and account balance inputs using a range check (check if data is more than or less then set values).
+- Validate the user input using a presence check (if input == "":).
+- Validate the user date of birth using a format check (You can check if the / is in the data with if DoB[2]=="/":). 
 
 <hr>
 
