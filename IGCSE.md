@@ -11,7 +11,7 @@ bodyClass: page-about
 - Software
 - The internet and its uses
 - Automated and emerging technologies
-# Computer Systems Modules:
+# Algorithms, Programming and Logic Modules:
 - Algorithm design and problem-solving
 - Programming
 - Databases
