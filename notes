@@ -1,1 +1,20 @@
+### Activity 3:
 
+Take a look at the following code which you may have seen when building your Scratch program. You should notice the if blocks have a different type of comparison compared to the ask_hobby functions.
+
+<p align="center">
+<img src="/images/illustrations/y8l4_2.png" width="50%" height="auto">
+</p>
+
+You can carry out a range of comparisons in your decisions:
+  
+| Symbol | Meaning                   | Example                |
+|:------:|:-------------------------:|:----------------------:|
+|   ==   | Is equal to               | if name == "Mr Rees":  |
+|   !=   | Not equal to              | if homework != "done": |
+|   >    | greater than              | if age > 18:           |
+|   <    | less then                 | if score < 50:         |
+|   >=   | greater than or equal to  | if goals >= 5:         |
+|   <=   | Less than or equal to     | if points <= 10:       |
+
+Add a function to your code which contains a different type of check than what you have already used.
