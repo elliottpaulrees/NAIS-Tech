@@ -90,26 +90,32 @@ def challenge_room():
     print("\nA gate blocks your path. It needs a code (1-10).")
     
     try:
-        guess = int(input("Enter your guess: "))
-        attempts += 1  # This will increase each time they try
-        
-        # Using multiple comparison and boolean operators
-        if guess != 7 and guess < 5:  # Not equal AND less than
-            player_health -= 10
-            print("A trap triggers! -10 health.")
+        loop = True
+
+        while loop == True:
+    
+            guess = int(input("Enter your guess: "))
+            attempts += 1  # This will increase each time they try
             
-        elif guess > 10 or guess < 1:  # Greater than OR less than
-            print("The number must be between 1-10! Waste of an attempt.")
-            
-        elif guess == 7 and not player_has_key:  # Equal AND NOT
-            player_has_key = True
-            print("The gate opens! You found the key!")
-            
-        elif player_has_key and attempts >= 2:  # AND with greater/equal
-            print("You already have the key! Just go through the gate.")
-            
-        else:
-            print("Nothing happens. Try again.")
+            # Using multiple comparison and boolean operators
+            if guess != 7 and guess < 5:  # Not equal AND less than
+                player_health -= 10
+                print("A trap triggers! -10 health.")
+                
+            elif guess > 10 or guess < 1:  # Greater than OR less than
+                print("The number must be between 1-10! Waste of an attempt.")
+                
+            elif guess == 7 and not player_has_key:  # Equal AND NOT
+                player_has_key = True
+                print("The gate opens! You found the key!")
+                loop = False
+                # Have a function call here to take you to your next function
+                
+            elif player_has_key and attempts >= 2:  # AND with greater/equal
+                print("You already have the key! Just go through the gate.")
+                
+            else:
+                print("Nothing happens. Try again.")
             
     except ValueError:
         print("That's not a valid number!")  # != int
