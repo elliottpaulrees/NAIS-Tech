@@ -8,16 +8,16 @@ bodyClass: page-about
 # Lesson 1 Binary conversion (Denary to Binary/ Binary to Denary)
 
 ## Lesson Objective:
--To be able to convert decimal numbers to binary and binary numbers to decimal with accuracy
--To be able to explain the logical steps involved in binary conversion processes
--To apply binary conversion techniques to solve basic computational problems
+- To be able to convert decimal numbers to binary and binary numbers to decimal with accuracy
+- To be able to explain the logical steps involved in binary conversion processes
+- To apply binary conversion techniques to solve basic computational problems
 
 ## Key learning points
 
--Computers use binary to represent all data and instructions.
--Binary is a number system consisting of 1s and 0s.
--Binary can be represented by two-state electrical signals within circuits.
--A transistor that is “on” represents a 1; a transistor that is “off” represents a 0.
+- Computers use binary to represent all data and instructions.
+- Binary is a number system consisting of 1s and 0s.
+- Binary can be represented by two-state electrical signals within circuits.
+- A transistor that is “on” represents a 1; a transistor that is “off” represents a 0.
 
 ## Keywords
 
