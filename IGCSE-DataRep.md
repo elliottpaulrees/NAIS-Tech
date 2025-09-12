@@ -27,7 +27,7 @@ Instruction - directions on how to carry out a specific task
 Transistor - a tiny electronic switch controlled by electricity.
 
 ###Watch Video below:
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4yvw69l0SZ9lZ4Vn" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">how to get embed code from youtube</a> and <a href="https://gamstopcancel.com/">how to cancel gamstop</a></iframe></p>
+
 
 
 #Lesson 2 Binary addition
