@@ -28,7 +28,7 @@ Transistor - a tiny electronic switch controlled by electricity.
 
 ### Watch Video below:
 
-{% include youtubePlayer.html id=page.Axeigunq3I %}
+{% include youtubePlayer.html id=page.iAxeigunq3I%}
 
 
 # Lesson 2 Binary addition
