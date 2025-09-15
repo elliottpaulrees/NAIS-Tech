@@ -28,9 +28,29 @@ Transistor - a tiny electronic switch controlled by electricity.
 
 ### Watch Video below:
 
-{% include youtubePlayer.html id=page.iAxeigunq3I%}
+{% include youtubePlayer.html id=page.iAxeigunq3I %}
 
 
 # Lesson 2 Binary addition
+## Lesson Objective:
+- To understand the principles of binary number representation and place value
+- To be able to perform binary addition involving 1-bit and 2-bit numbers
+- To know hot to apply rules for binary addition including carrying over
+- To identify and explain overflow in binary arithmetic
+
+## Key learning points
+- The process of counting in binary follows the same principle as decimal.
+- Binary addition can be achieved with the following facts: 0+0 = 0, 0+1 = 1, 1+1 = 10 and 1+1+1 = 11.
+
+## Keywords
+
+- Addition - a mathematical operation where two or more numbers are combined to find their total
+- Carry - the extra value that moves to the next column when the sum of digits in a place value exceeds the basey.
+
+### Watch Video below:
+
+{% include youtubePlayer.html id=page.mQx_B7YNRbI&list=PLCiOXwirraUBfgSL-hI1dA1FOwKo-QoyY&index=6 %}
+
+
 # Lesson 3 Hexadecimal
 # Lesson 4 Ligical shift and 2's complements
