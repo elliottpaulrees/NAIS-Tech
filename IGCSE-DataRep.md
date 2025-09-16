@@ -47,7 +47,7 @@ Transistor - a tiny electronic switch controlled by electricity.
 
 ### Watch Video below:
 
-{%include youtubePlayer.html id=page.mQx_B7YNRbI&list=PLCiOXwirraUBfgSL-hI1dA1FOwKo-QoyY&index=6%}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=Zl2MbTtDVHOORFTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 # Lesson 3 Hexadecimal
