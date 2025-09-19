@@ -21,10 +21,10 @@ bodyClass: page-about
 
 ## Keywords
 
-Data - raw facts, such as numbers or text, presented without any meaning
-Binary - a number system that uses the digits 0 and 1 to represent data
-Instruction - directions on how to carry out a specific task
-Transistor - a tiny electronic switch controlled by electricity.
+- Data - raw facts, such as numbers or text, presented without any meaning
+- Binary - a number system that uses the digits 0 and 1 to represent data
+- Instruction - directions on how to carry out a specific task
+- Transistor - a tiny electronic switch controlled by electricity.
 
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=9RVaz_WUlWn9pzil" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
