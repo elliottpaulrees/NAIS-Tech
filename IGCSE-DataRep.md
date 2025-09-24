@@ -88,7 +88,7 @@ bodyClass: page-about
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ml1zwSgfZ7g?si=v0b6X46SwUUigquI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Lesson 5 2's complements
+# Lesson 5 two's complements
 
 ## Lesson Objective:
 - To be able to Explain how two’s complement is used to represent negative binary numbers and distinguish it from unsigned binary representation
