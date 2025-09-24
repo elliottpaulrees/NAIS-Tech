@@ -41,7 +41,6 @@ bodyClass: page-about
 - Binary addition can be achieved with the following facts: 0+0 = 0, 0+1 = 1, 1+1 = 10 and 1+1+1 = 11.
 
 ## Keywords
-
 - Addition - a mathematical operation where two or more numbers are combined to find their total
 - Carry - the extra value that moves to the next column when the sum of digits in a place value exceeds the basey.
 
@@ -51,4 +50,20 @@ bodyClass: page-about
 
 
 # Lesson 3 Hexadecimal
+## Lesson Objective:
+- To be able to explain the relationship between binary and hexadecimal number systems, including why hexadecimal is used in computing for compact representation.
+- To convert binary numbers (up to 8 bits) into their equivalent hexadecimal values using grouping and place value techniques.
+- To Convert hexadecimal numbers (up to 2 digits) into their equivalent binary values using place value understanding and 4-bit grouping techniques.
+
+## Key learning points
+- Hexadecimal is often used by humans instead of binary because it is easier to read and interpret and uses fewer digits.
+- Hexadecimal is a base-16 number system.
+- The digits used for hexadecimal are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F.
+## Keywords
+- Hexadecimal - a base-16 number system that uses the digits 0-9 and the letters A, B, C, D, E and F
+- Base-16 - a number system that uses 16 digits
+  
+### Watch Video below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/duBPL-3hreI?si=KL0tYF_lhMC8IWps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Lesson 4 Ligical shift and 2's complements
