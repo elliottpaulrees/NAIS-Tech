@@ -48,8 +48,8 @@ bodyClass: page-about
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=Zl2MbTtDVHOORFTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 # Lesson 3 Hexadecimal
+
 ## Lesson Objective:
 - To be able to explain the relationship between binary and hexadecimal number systems, including why hexadecimal is used in computing for compact representation.
 - To convert binary numbers (up to 8 bits) into their equivalent hexadecimal values using grouping and place value techniques.
@@ -59,6 +59,7 @@ bodyClass: page-about
 - Hexadecimal is often used by humans instead of binary because it is easier to read and interpret and uses fewer digits.
 - Hexadecimal is a base-16 number system.
 - The digits used for hexadecimal are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F.
+  
 ## Keywords
 - Hexadecimal - a base-16 number system that uses the digits 0-9 and the letters A, B, C, D, E and F
 - Base-16 - a number system that uses 16 digits
@@ -66,4 +67,46 @@ bodyClass: page-about
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/duBPL-3hreI?si=KL0tYF_lhMC8IWps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Lesson 4 Ligical shift and 2's complements
+# Lesson 4 Ligical shift 
+
+## Lesson Objective:
+- To be able to perform left and right binary shifts on 8-bit binary numbers and explain their effect on the numerical value.
+- To interpret how binary shifts can be used to multiply or divide binary numbers by powers of two, and identify limitations of this method
+  
+## Key learning points
+- Binary shifting is shifting the bits to the left or to the right.
+- If you shift to the left, you multiply the number by a power of 2.
+- If you shift to the right, you divide the number by a power of 2.
+- Overflow is when a number is too large to be stored in allocated memory.
+- Underflow is when a number is too small to be processed.
+  
+## Keywords
+- Binary shifting - when binary digits are moved left or right, multiplying or dividing them by powers of 2
+- Overflow - when a number is too large to be represented in the available binary digits
+- Underflow - when a number is too small to be represented in the available binary digits
+
+### Watch Video below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ml1zwSgfZ7g?si=v0b6X46SwUUigquI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Lesson 5 2's complements
+
+## Lesson Objective:
+- To be able to Explain how two’s complement is used to represent negative binary numbers and distinguish it from unsigned binary representation
+
+  
+## Key learning points
+
+- Two’s complement allows binary representation of both positive and negative integers.
+- The most significant bit (MSB) indicates the sign: 0 for positive, 1 for negative.
+- To find the two’s complement of a binary number:
+  - Invert all bits (one’s complement).
+  - Add 1 to the result.
+- Two’s complement simplifies binary arithmetic, especially subtraction.
+-  Range of values for 8-bit two’s complement: −128 to +127.
+  
+## Keywords
+
+- Sign Bit – The most significant bit (MSB) in two’s complement indicates the sign of the number: 0 for positive, 1 for negative.
+  
+### Watch Video below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PhNzIphrP80?si=GninTLBNGUqNgyV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
