@@ -104,7 +104,7 @@ When the binary digits 1 and 0 are added, the sum is 1. When both the digits are
 
 Another example: 
 <p align="center">
-<img src="/images/illustrations/binaryaddition2.png" width="50%" height="auto">
+<img src="/images/illustrations/binary addition 2.png" width="50%" height="auto">
 </p>
 
 
@@ -160,6 +160,19 @@ The sum of these two numbers is bigger than 8 bits (an extra bit than the regist
 - Binary shifting - when binary digits are moved left or right, multiplying or dividing them by powers of 2
 - Overflow - when a number is too large to be represented in the available binary digits
 - Underflow - when a number is too small to be represented in the available binary digits
+
+### Binary shift
+
+<p align="center">
+<img src="/images/illustrations/binaryshift.png" width="50%" height="auto">
+</p>
+
+Again, it can be noted that the binary equivalent of 12 shifted to the left is the binary equivalent of 24. It can be summarised that when a denary number is multiplied by 2, its binary equivalent shifts left by 1 place. Also, multiplication by 4 results in the shift of the binary equivalent by 2 places and multiplication by 8 results in a shift of the binary equivalent by 3 places and so on.
+During logical left shifts, sometimes bits might be lost. For example, multiplying 1000 0000 by 2 using a logical left shift will result in an overflow error and the result will be 0000 000. In practice, a different methodology is used to perform multiplication.
+During logical right shifts, again lower significant bits might be lost resulting in a loss of precision. For example, dividing 0000 0101 (Denary number 6)  by 2 will result in 0000 0010 (denary number 2) which is incorrect.  
+
+
+
 
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ml1zwSgfZ7g?si=v0b6X46SwUUigquI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
