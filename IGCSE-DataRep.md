@@ -171,6 +171,21 @@ Again, it can be noted that the binary equivalent of 12 shifted to the left is t
 During logical left shifts, sometimes bits might be lost. For example, multiplying 1000 0000 by 2 using a logical left shift will result in an overflow error and the result will be 0000 000. In practice, a different methodology is used to perform multiplication.
 During logical right shifts, again lower significant bits might be lost resulting in a loss of precision. For example, dividing 0000 0101 (Denary number 6)  by 2 will result in 0000 0010 (denary number 2) which is incorrect.  
 
+### Arithmetic shift
+
+Logical shifts cannot be used for negative numbers stored in two’s- complement form. Let us consider the denary number -6. Its binary equivalent in two’s complement form is 1111 1001. Performing logical right shift, we get 0111 1100, which is equivalent to 124.  
+
+Hence, to divide negative numbers in two’s-complement form, we use arithmetic right shifts. In this shift, all the bits are moved to right one place but the leftmost bit is kept the same.
+
+<p align="center">
+<img src="/images/illustrations/rightshift.png" width="50%" height="auto">
+</p>
+
+Arithmetic left shifts are performed similarly to logical left shifts. All bits are moved to left one place and the leftmost bit is kept as 0. -9 is multiplied by using arithmetic left shift as given below.
+
+<p align="center">
+<img src="/images/illustrations/leftshift.png" width="50%" height="auto">
+</p>
 
 
 
