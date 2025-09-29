@@ -211,6 +211,58 @@ Arithmetic left shifts are performed similarly to logical left shifts. All bits 
 ## Keywords
 
 - Sign Bit – The most significant bit (MSB) in two’s complement indicates the sign of the number: 0 for positive, 1 for negative.
+
+### Representing negative numbers
+
+Signed integers can be either positive or negative. An extra bit is used to represent the sign of a number in binary representation. In the case of signed numbers, the leftmost bit is used to represent the sign and is called the sign bit. 0 represents a positive number and 1 represents a negative number. The rest of the bits represent the magnitude of the number. Consider the 8-bit binary number 10001101.
+
+<p align="center">
+<img src="/images/illustrations/signedbit1.png" width="50%" height="auto">
+</p>
+
+The smallest number that can be represented using 8 bits is 11111111 (-127) and the largest number is 01111111 (+127). Similarly, the signed number can be represented in 32-bits, 64-bits and so on.
+Finding two’s complement is an alternate method to represent negative numbers. This method is used by most computers to perform mathematical operations.
+Let us consider an example of representing -5. The binary value of 5 is 101. The leftmost bit is added to represent the positive sign. +5 is 0101. Each bit is inverted and, hence, the 0101 becomes 1010. 1 is added to this number. 1010 + 1=1011. A few examples of representing binary numbers using two’s complement are given in the table below:
+
+<p align="center">
+<img src="/images/illustrations/signedbit2.png" width="50%" height="auto">
+</p>
+
+### Steps to convert signed denary numbers to two’s complement:
+- Convert the positive form number to binary.
+- Invert the bits, i.e., 1 to 0 and 0 to 1
+- Add 1.
   
+For example:
+Converting -17 to its two’s complement form.
+
+<p align="center">
+<img src="/images/illustrations/converttonegative.png" width="50%" height="auto">
+</p>
+
+### Steps to convert two’s complement number to denary:
+- Subtract 1.
+- Invert the bits, i.e., 1 to 0 and 0 to 1
+- Convert the binary number to denary and add a negative symbol.
+  
+Converting the negative two’s complement number obtained previously.
+
+<p align="center">
+<img src="/images/illustrations/sumtwocomplement.png" width="50%" height="auto">
+</p>
+
+### Sum of numbers: Using two's complement
+
+Let us consider adding -4 and 3 using two’s complement.
+<p align="center">
+<img src="/images/illustrations/convertbackpositive.png" width="50%" height="auto">
+</p>
+
+Converting the sum 1111 into denary number,
+-8+4+2+1=-1
+
+
+
+
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PhNzIphrP80?si=GninTLBNGUqNgyV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
