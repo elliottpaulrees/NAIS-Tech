@@ -1,4 +1,4 @@
----
+<img width="3263" height="31" alt="image" src="https://github.com/user-attachments/assets/2858218d-a883-4c6d-b1c5-03aa0df85f68" /><img width="1218" height="31" alt="image" src="https://github.com/user-attachments/assets/2af7d130-3ba9-4f0c-8307-af0c40a5bac2" />---
 title: IGCSE Computer Science
 layout: page
 description: About
@@ -139,9 +139,120 @@ The sum of these two numbers is bigger than 8 bits (an extra bit than the regist
 ## Keywords
 - Hexadecimal - a base-16 number system that uses the digits 0-9 and the letters A, B, C, D, E and F
 - Base-16 - a number system that uses 16 digits
+
+Hexadecimal (or hex) is a system with base 16. The 16 digits used in the hexadecimal system and their equivalent value in binary and in denary systems are shown in the following table.
+
+<p align="center">
+<img src="/images/illustrations/Hextable.png" width="50%" height="auto">
+</p>
+
+It can be noted from the above table that each nibble (a group of 4 bits) can be represented with 1 digit in the hexadecimal system. It is very convenient to write in numbers in hex compared to the binary system. It is helpful for programmers coding in low-level languages. Instead of 4 bits, it is enough if they type a single character. The memory location in a computer is also stated in hexadecimal form. This makes the address more readable. Consider a memory address A3F581. Is represented in binary, it would be:
+1010| 0011| 1111| 0101| 0100| 0001
+
+### Converting Binary to hexadecimal
+
+Binary numbers can be easily converted into a hexadecimal number. Starting from right to left, the binary numbers are split into groups of 4 bits. If the group has less than 4 bits, zeros are added to the left. Each nibble is then converted to its equivalent hexadecimal number.
+Let us convert 10111011001010 to hexadecimal.
+
+<p align="center">
+<img src="/images/illustrations/binarytohex.png" width="50%" height="auto">
+</p>
+
+### Converting hexadecimal to binary
+
+Hexadecimal numbers are converted to binary by finding the 4-bit code and writing the nibbles together.
+Let us convert 9AF into binary
+
+<p align="center">
+<img src="/images/illustrations/hextobinary.png" width="50%" height="auto">
+</p>
+
+### Converting denary to hexadecimal
+
+To convert a denary number to hexadecimal, the number is converted to binary first. Then, the binary number is converted to the hexadecimal system.
+Let us consider converting the number 14. The binary form is 1110, which is E in the hexadecimal system.
+Let us consider the denary number 131. 
+
+<p align="center">
+<img src="/images/illustrations/denarytohex.png" width="50%" height="auto">
+</p>
+
+### Converting hexadecimal to denary
+
+Hexadecimal numbers can be converted to the denary system by using the place values. Let us consider converting hexadecimal number 7AF into the denary system. The place value is in the powers of 16. The value of each digit is multiplied with the place value and the values are added to find the denary equivalent.
+
+<p align="center">
+<img src="/images/illustrations/hextodenary.png" width="50%" height="auto">
+</p>
+
   
-### Watch Video below:
+### Watch Video below for a demo:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/duBPL-3hreI?si=KL0tYF_lhMC8IWps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Application of the hexadecimal system
+
+The hexadecimal system is a convenient form to represent information compared to binary. A nibble is represented in one digit of the hex system.  A few applications of the hex system are explained below:
+
+### Colours
+Hexadecimal numbers are used to represent colours in various software tools. A colour is represented in #RRGGBB format. RR, GG and BB represent the hex number of red, green and blue colours. A pure blue colour is #0000FF, white is #FFFFFFF and black is #0000000. Using this method, 256 variants of each colour can be made, making a total of 256 reds ×256 greens ×256 blues. A shade of yellow is represented in hex format as #FEF65B.
+<p align="center">
+<img src="/images/illustrations/Hexcolours.png" width="50%" height="auto">
+</p>
+
+### RGB Colour model
+Colours can also be represented using the RGB colour model. This system is similar to the hex system but each colour has a value between 0 to 255. Hence, a shade of pink represented in hex format as #FEF65B has an R value of 254, G value of 246 and B value of 91.
+
+<p align="center">
+<img src="/images/illustrations/hexrgb.png" width="50%" height="auto">
+</p>
+
+### Errors
+Error messages contain a hex number that represents the memory location of the error. This information is very useful to programmers. The error can be easily rectified by verifying the code in that particular location. The contents of part of a memory helps the programmer to solve many problems. The process in which the contents of memory is displayed or stored in a storage drive in case of a system crash is called a memory dump. An example of a memory dump is shown in the figure below.
+
+<p align="center">
+<img src="/images/illustrations/hexerrors.png" width="50%" height="auto">
+</p>
+
+Using this information, a programmer can identify the exact location where the error lies. Compared to binary, this is easier to understand. The binary form of DEF6B2C3 is: 11011110111101101011001011000011.
+Even though using the hexadecimal system improves readability of errors, the programmer must have knowledge about the computer architecture to interpret the results.
+
+
+### MAC Addresses
+
+A media access control address refers to the number that uniquely identifies a device on the Internet. This is the address of the network interface card (NIC). A MAC address is made up of 48 bits, which are shown as a six-group of hexadecimal digits. 
+NN-NN-NN-DD-DD-DD or NN: NN: NN: DD: DD: DD
+
+The first half of the address represents the identification number of the manufacturer and the second half of the number represents the serial number of the device. For example: 00: 14: 22: 34: AC: 4F refers to a device made by Dell with a serial number of 34AC4F.
+
+There are two types of MAC address: Universally Administered MAC Address (UAA) and Locally Administered MAC Address (LAA). 
+The UAA is set by manufacturer and is most commonly used. This address is not changed most of the times. In case the UAA of a device is changed, it is important to make sure that the UAA is unique.  
+
+A user or organisation may change their UAA due to:
+Some software applications used on mainframe systems requires the systems to use a MAC address that follows a strict format. To ensure that all devices have MAC address that obey this format, it may be changed.
+
+A router or firewall may allow MAC addresses with certain format only. In order to bypass them, MAC address of device may be changed.
+Some networks may restrict certain MAC addresses. In order to use the network, certain devices may have their MAC addresses changed. 
+
+
+### URL
+
+Hexadecimal values are used to represent web addresses or URL (Uniform Resource Locator). The ASCII codes are used to represent the web address. For example:
+www.google.com becomes: (using the ASCII codes)
+
+<p align="center">
+<img src="/images/illustrations/hexurl.png" width="50%" height="auto">
+</p>
+
+% denotes that hexadecimal values are used. Hexadecimal values are used to represent addresses of files and web pages to improve security.  A user is protected from accessing a fake website when he is asked to use a hexadecimal URL rather than a URL with letters that could be misleading. 
+
+
+### Assembly code and machine code
+
+Machine code and assembly code can be used to refer the computer memory directly. Use of hexadecimal numbers makes low-level language coding easier, faster and reduces errors compared to the binary system. For example: An assembly code instruction ADD is translated to machine code as 0100, which is equivalent to 4 in hexadecimal. It is enough for the programmer to type a single digit ‘4’ compared to four digits ‘0100’.
+
+### Hypertext Markup Language (HTML)
+HTML is a markup language, widely used in developing web pages. It is used to define the attributes of text such as colour. Tags are used to define objects in a web-page. For example: The tag <p> is used to define a paragraph. The tag </p> represents its end. The contents between the two are codes. 
+Earlier in this section, we have learnt how hexadecimal codes are used to represent colours. These codes are also used in html to define objects.
 
 # Lesson 4 Logical shift 
 
