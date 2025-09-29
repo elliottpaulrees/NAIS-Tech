@@ -30,10 +30,16 @@ A computer has many electronic components that work as switches. These component
 
 ### Place value of the denary system
 The denary system has a base value of 10. It counts in multiples of 10. The number 7324 has 7 thousands, 3 hundreds, 2 tens and 4 ones. The following figure illustrates the place values in a denary system.
+<p align="center">
+<img src="/images/illustrations/placevaluedenary.png" width="50%" height="auto">
+</p>
 
 
-### Place vavue of the binary system
+### Place value of the binary system
 The binary numbers can also be represented using place values. The place values have a base 2. The first 8 digits are represented in the table below.
+<p align="center">
+<img src="/images/illustrations/placevaluebinary.png" width="50%" height="auto">
+</p>
 
 ### Size of computer memory
 
@@ -41,14 +47,24 @@ A binary digit is referred to as a bit. A nibble consists of 4 bits. A byte cons
 
 The memory sizes were originally standardised as using the base-2 representation. In this system, the prefixes kibi-, mebi-, gibi-, tebi- are used to avoid conflicts with base-10 system.
 
+<p align="center">
+<img src="/images/illustrations/newnamesize.png" width="50%" height="auto">
+</p>
+
 This representation is now used for representing the size of RAM modules only. After the standardisation of base-10 representation, the memory sizes are now represented as:
 
+<p align="center">
+<img src="/images/illustrations/base10 name.png" width="50%" height="auto">
+</p>
 
+### Converting denary to binary
 
+<p align="center">
+<img src="/images/illustrations/converting.png" width="50%" height="auto">
+</p>
 
-### Watch Video below:
+### Watch Video below for demo on how to convert:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=9RVaz_WUlWn9pzil" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 
 # Lesson 2 Binary addition
