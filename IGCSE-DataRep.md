@@ -82,9 +82,47 @@ This representation is now used for representing the size of RAM modules only. A
 - Addition - a mathematical operation where two or more numbers are combined to find their total
 - Carry - the extra value that moves to the next column when the sum of digits in a place value exceeds the basey.
 
+### Representing numbers 
+Programmers use many arithmetic operations in a program. The numbers are either represented as integers or floating point numbers. Integers are whole numbers and floating point numbers are used to represent numbers with decimal points. A 16-bit system can represent integers up to 216-1=65535. 8-bit, 16-bit, 32-bit and 64-bit are the most common bit lengths.
+
+## Adding Binary numbers
+Binary numbers are added in a column method as the denary numbers are added. Let us consider the following example of adding 0101 and 1011
+<p align="center">
+<img src="/images/illustrations/binaryaddition1.png" width="50%" height="auto">
+</p>
+
+When the binary digits 1 and 0 are added, the sum is 1. When both the digits are 0, the sum is 0. When both the digits are 1, the sum is 10 and 1 is carried over. 0101 and 1001 represent the denary numbers 5 and 9. The sum of 5 and 9 is 14. Convert the sum obtained to a denary number.
+
+(8×1)+(4×1)+(2×1)+(0×1)=14
+
+
+### The rules are:
+- 1 + 0  = sum 1 and carry 0
+- 1 + 1  = sum 0 and carry 1 
+- 1 + 1 + (carry 1) = sum 1 and carry 1
+- Adding three 1’s results in a sum of 1 and a carry of 1.
+
+Another example: 
+<p align="center">
+<img src="/images/illustrations/binaryaddition2.png" width="50%" height="auto">
+</p>
+
+
 ### Watch Video below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=Zl2MbTtDVHOORFTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Overflow error
+A CPU with an 8-bit register has a capacity of up to 11111111 in binary. If an extra bit is added, it is said to be an overflow error. Consider the addition of two binary numbers 11101101 and 10000100 as shown below:
+
+<p align="center">
+<img src="/images/illustrations/overflowerror.png" width="50%" height="auto">
+</p>
+
+The sum of these two numbers is bigger than 8 bits (an extra bit than the register can hold). The computer thinks that 11101101+10000100=01110001 as it does not have space to store the extra bit. The number of bits a register can hold is called word size. Exceeding the capacity of word size in a register results in an overflow error. 
+
+
 
 # Lesson 3 Hexadecimal
 
@@ -105,7 +143,7 @@ This representation is now used for representing the size of RAM modules only. A
 ### Watch Video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/duBPL-3hreI?si=KL0tYF_lhMC8IWps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Lesson 4 Ligical shift 
+# Lesson 4 Logical shift 
 
 ## Lesson Objective:
 - To be able to perform left and right binary shifts on 8-bit binary numbers and explain their effect on the numerical value.
