@@ -427,8 +427,8 @@ This activity requires you to read a file containing structured data and use nes
 # Lesson 6 - Searching and Sorting Algorithms
 
 
-<details>
-    {% raw %}
+<summary>
+  
     After learning to store data efficiently in 1D and 2D arrays, the next challenge is processing that data in the most effective way. Searching and Sorting are the two most fundamental tasks in computer science, and they allow us to explore how different algorithms can solve the same problem with vastly different speeds.
     
     ## Part 1: Understanding Searching Algorithms
@@ -506,7 +506,6 @@ This activity requires you to read a file containing structured data and use nes
     
     ## Part 3: Implementing the Algorithms
     For each of the discussed sorting and searching algorithms, create a function which takes in a 1D array and carries out the required algorithm on the list. 
-    
-{% endraw %}
 
-</details>
+
+</summary>
