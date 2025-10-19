@@ -457,10 +457,12 @@ Steps:
 - If not found, return -1.
   
 <BR>
-## Part 2: Understanding Sorting Algorithms
+
+
+### Part 2: Understanding Sorting Algorithms
 Sorting arranges a list of items into a specific order (ascending or descending).
 
-#### bubble Sort
+### bubble Sort
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 - When to use: Teaching purposes only.
 - Efficiency: Very slow — O(n²).
