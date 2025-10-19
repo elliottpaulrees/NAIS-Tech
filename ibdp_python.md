@@ -135,9 +135,41 @@ Continue developing the above program to build your own interactive adventure!
 
 # Lesson 3 - Using Loops
 
+Loops are a core part of coding and allow steps to be repeated efficiently, saving countless lines of code. We will examine two fundamental types: Count-Controlled and Condition-Controlled.
 
-### Activity 1
- This is a question of probability. Write a function that rolls a dice an amount of times specified by the user and logs each fall. Calculate the likelihood of each number falling. 
+### Count-Controlled Loop Analysis
+
+This loop is used when the number of repetitions is known before the loop starts. Analyse the code beloe and see if you can understand how it works.
+
+```python
+# Constants for the calculation
+INITIAL_BALANCE = 1000.00
+ANNUAL_RATE = 0.05 # 5% annual interest
+NUM_YEARS = 5
+
+balance = INITIAL_BALANCE
+
+# Output using simple string concatenation
+print("Starting balance: $" + str(balance))
+print("-" * 30)
+
+# The 'for' loop executes exactly NUM_YEARS (5) times.
+for year in range(NUM_YEARS):
+    # Calculate interest for the year
+    interest = balance * ANNUAL_RATE
+    balance += interest
+    
+    # Concatenating strings and converted numbers for output
+    # Note: We round the balance when converting to a string to keep the output clean.
+    output = "End of Year " + str(year + 1) + ": Balance = $" + str(round(balance, 2))
+    print(output)
+
+print("-" * 30)
+print("Final balance after " + str(NUM_YEARS) + " years: $" + str(round(balance, 2)))
+```
+
+### Activity 1 - Using count controlled loops.
+This is a question of probability. Write a function that rolls a dice an amount of times specified by the user and logs each fall. Calculate the likelihood of each number falling. 
 
 The probability (or, more precisely, the empirical probability or relative frequency) of rolling a specific number is calculated as:
 
@@ -147,6 +179,48 @@ To express this as a percentage, you simply multiply the result by 100:
 
 Percentage (Number X) = (Count of X / Total Number of Rolls) * 100
 
-### Activity 2
+
+### Condition-Controlled Loop Analysis
+
+This loop is used when the number of repetitions is unknown because it depends on an external condition (like a goal being reached or user input).
+
+
+```python
+# Constants for the calculation
+INITIAL_BALANCE = 1000.00
+ANNUAL_RATE = 0.05
+GOAL_AMOUNT = 1500.00 # The loop must continue until this condition is met
+
+balance = INITIAL_BALANCE
+years = 0
+
+# Output using simple string concatenation
+print("Goal: Achieve a balance of $" + str(GOAL_AMOUNT))
+print("-" * 30)
+
+# The 'while' loop continues AS LONG AS the balance is below the goal.
+while balance < GOAL_AMOUNT:
+    # Increment the loop counter
+    years += 1
+    
+    # Calculate interest
+    interest = balance * ANNUAL_RATE
+    balance += interest
+    
+    # Concatenating strings and converted numbers for output
+    # The round() function is necessary to keep the monetary output clean.
+    output = "Year " + str(years) + ": New balance = $" + str(round(balance, 2))
+    print(output)
+
+print("-" * 30)
+# Final output condition depends on the loop exit state
+print("Goal achieved in " + str(years) + " years! Final balance: $" + str(round(balance, 2)))
+```
+
+### Activity 2 - Use a condition controlled loop to create a game of Rockm Paper, Scissors!
 
 Build a game of Rock, Paper, Scissors against the computer. The game continues until either the player or the computer wins 3 rounds. Display the score after each round. Each part of the program should be split into functions!
+
+
+
+<hr>
