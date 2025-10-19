@@ -405,11 +405,11 @@ This activity requires you to read a file containing structured data and use nes
 
 - For each student's score in each subject, determine and print their letter grade (A, B, C, D, or F) using the following scale:
 
-    - >80: A
+    - Over 80: A
     - 70-79: B
     - 60-69: C
     - 50-59: D
-    - <50: f
+    - Less than 50: f
 
 
 3. Calculate Student Average Scores:
