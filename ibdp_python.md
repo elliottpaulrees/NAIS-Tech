@@ -426,83 +426,58 @@ This activity requires you to read a file containing structured data and use nes
 
 # Lesson 6 - Searching and Sorting Algorithms
 
-    After learning to store data efficiently in 1D and 2D arrays, the next challenge is processing that data in the most effective way. Searching and Sorting are the two most fundamental tasks in computer science, and they allow us to explore how different algorithms can solve the same problem with vastly different speeds.
-    
-    ## Part 1: Understanding Searching Algorithms
-    
-    Searching is the process of finding a specific item within a data structure. We will analyze two common methods.
-    
-    ### Linear Search (Sequential Search)
-    
-    The Linear Search algorithm checks every element in the list sequentially (one by one) until the target item is found or the end of the list is reached.
-    
-    - When to use: When the list is small or unsorted.
-    - Efficiency: Slow and increases in time as the list of data increase in size and can be represented with O(N)
-    
-    Steps:
-    1.  Start a loop to check every position (index) in the list, from the first position to the last position.
-    2.  Inside the loop, compare the number at the current position with the `target_value` you are looking for.
-    3.  IF they are the same number, stop the loop and give back the current position (index).
-    4.  IF NOT, the loop continues to the next position.
-    5.  If the loop finishes checking every position and the number was not found, give back the number **-1** (which means the search failed).
-    
-    ### Binary Search
-    
-    The Binary Search algorithm is significantly faster but has one strict requirement: the list must be sorted before searching can begin. It works by repeatedly dividing the search interval in half.
-    
-    - When to use: When the list is large and sorted.
-    - Efficiency: Very fast. It quickly eliminates half the remaining items with each step and can be represented with ($O(\log n)$).
-    
-    
-    Steps:
-    1.  Start Pointers: Create a variable called `low` and set its value to the first position of the list (index 0).
-    2.  Create a second variable called `high` and set its value to the last position (index) of the list.
-    3.  Search Loop: Start a loop that **continues to run** as long as the `low` number is smaller than or equal to the `high` number.
-    4.  Find Middle: Inside the loop, calculate the position of the **middle number** between `low` and `high`.
-    5.  Check Middle: Now, compare the number at the middle position with the `target_value` you want to find.
-    6.  IF Found: IF the middle number is the same as the `target_value`, stop the search immediately and give back the middle position.
-    7.  IF Too Small: ELSE IF the middle number is smaller than the `target_value`, throw away the lower half of the list. Change the `low` variable to be one position higher than the middle position.
-    8.  IF Too Big: ELSE (if the middle number is bigger than the `target_value`), throw away the upper half of the list. Change the `high` variable to be one position lower than the middle position.
-    9.  End Search: If the loop finishes without finding the number, give back the number **-1** (meaning the search failed).
-    
-    ## Part 2: Understanding Sorting Algorithms
-    Sorting is the process of arranging a list of items into a specific order (ascending or descending).
-    
-    ### Bubble Sort
-    The Bubble Sort algorithm is the simplest sorting method to understand. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process "bubbles" the largest elements to the end of the list.
-    
-    - When to use: Only for teaching purposes. It is never used in real-world applications.
-    - Efficiency: Extremely slow O(n<sup>2</sup>), especially on large lists.
-    
-    Steps:
-    1.  Outer Loop (Passes):Start the main loop that controls how many times you check the list. This loop repeats almost the total length of the list.
-    2.  Inner Loop (Comparisons): Inside the first loop, start a second, nested loop. This loop checks numbers from the very start of the list up to the end of the **unsorted part**.
-    3.  Compare: Look at two numbers that are right next to each other: the current number (j) and the number after it (j + 1).
-    4.  IF Wrong Order: IF the current number (j) is bigger than the next number (j + 1), it means they are in the wrong order.
-    5.  Swap: Swap the positions of these two numbers.
-    6.  Repeat: The inner loop repeats until the largest unsorted number has moved ("bubbled up") to its correct place at the end of the unsorted section.
-    7.  Outer Loop Repeats: The outer loop repeats until the entire list is sorted.
-    
-    ### Selection Sort
-    
-    The Selection Sort algorithm improves slightly on Bubble Sort by minimizing the number of swaps. In each pass, it finds the smallest element from the unsorted portion of the list and swaps it with the element at the current position.
-    
-    - Concept: It "selects" the smallest remaining item and moves it to its correct sorted position.
-    - Efficiency: Also slow O(n<sup>2</sup>), similar to Bubble Sort, but typically performs fewer data moves (swaps).
-    
-    
-    Steps:
-    1.  Outer Loop: Start a loop that goes through the list from the first position (index 0) almost to the end. This loop marks the start of the unsorted part.
-    2.  Find the Smallest: Set a variable called `min_index` equal to the index of the number at the current position (from the outer loop). Assume this is the smallest number for now.
-    3.  Inner Loop: Start a second, inner loop that checks **all the positions after the current position (i.e., the rest of the unsorted part).
-    4.  Compare and Update: IF the number at the current inner loop position is smaller than the number at the current `min_index`, then change `min_index` to the inner loop's position.
-    5.  Smallest Found: After the inner loop finishes, `min_index` now holds the position of the true smallest number in the unsorted part.
-    6.  Swap: Swap the number at the current position (from the outer loop) with the number at the `min_index` position.
-    7.  Repeat: The outer loop repeats, and the sorted section of the list grows by one number.
-    
-    
-    ## Part 3: Implementing the Algorithms
-    For each of the discussed sorting and searching algorithms, create a function which takes in a 1D array and carries out the required algorithm on the list. 
+Part 1: Understanding Searching Algorithms
+Searching is the process of finding a specific item within a data structure. We will analyze two common methods.
+Linear Search (Sequential Search)
+The Linear Search algorithm checks every element in the list sequentially (one by one) until the target item is found or the end of the list is reached.
+- When to use: When the list is small or unsorted.
+- Efficiency: Slow and increases in time as the list of data increases in size. Represented as O(N).
+Steps:
+- Start a loop to check every position (index) in the list, from the first to the last.
+- Inside the loop, compare the number at the current position with the target_value.
+- If they match, return the current index.
+- If not, continue to the next position.
+- If the loop finishes without finding the number, return -1.
+Binary Search
+The Binary Search algorithm is significantly faster but requires the list to be sorted. It works by repeatedly dividing the search interval in half.
+- When to use: When the list is large and sorted.
+- Efficiency: Very fast. Represented as O(log n).
+Steps:
+- Set low to index 0 and high to the last index.
+- While low ≤ high, do the following:
+- Calculate the middle index.
+- Compare the middle value with target_value.
+- If equal, return the middle index.
+- If smaller, set low to middle + 1.
+- If larger, set high to middle - 1.
+- If not found, return -1.
 
+Part 2: Understanding Sorting Algorithms
+Sorting arranges a list of items into a specific order (ascending or descending).
+Bubble Sort
+Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+- When to use: Teaching purposes only.
+- Efficiency: Very slow — O(n²).
+Steps:
+- Outer loop: Repeat for the length of the list.
+- Inner loop: Compare adjacent elements up to the unsorted part.
+- If the current element is greater than the next, swap them.
+- Repeat until the list is sorted.
+Selection Sort
+Selection Sort finds the smallest element in the unsorted part and swaps it with the current position.
+- Concept: Selects the smallest remaining item and moves it to its correct position.
+- Efficiency: Also O(n²), but fewer swaps than Bubble Sort.
+Steps:
+- Outer loop: Iterate from the start to the second-to-last element.
+- Assume the current index is the smallest.
+- Inner loop: Search for the smallest element in the unsorted part.
+- If a smaller element is found, update min_index.
+- Swap the current element with the smallest found.
+- Repeat until the list is sorted.
+
+Part 3: Implementing the Algorithms
+Create a function for each algorithm that takes a 1D array and performs the corresponding search or sort.
+
+Let me know if you'd like help writing the actual code for these algorithms in Python, JavaScript, or another language!
 
 <hr>
