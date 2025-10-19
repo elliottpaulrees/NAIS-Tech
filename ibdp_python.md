@@ -473,7 +473,7 @@ Sorting is the process of arranging a list of items into a specific order (ascen
 The Bubble Sort algorithm is the simplest sorting method to understand. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process "bubbles" the largest elements to the end of the list.
 
 - When to use: Only for teaching purposes. It is never used in real-world applications.
-- Efficiency: Extremely slow ($O(n^2)$), especially on large lists.
+- Efficiency: Extremely slow O(n<sup>2</sup>), especially on large lists.
 
 Steps:
 1.  Outer Loop (Passes):Start the main loop that controls how many times you check the list. This loop repeats almost the total length of the list.
