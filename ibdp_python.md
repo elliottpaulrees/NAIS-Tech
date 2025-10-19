@@ -492,7 +492,7 @@ The Selection Sort algorithm improves slightly on Bubble Sort by minimizing the 
 - Efficiency: Also slow ($O(n^2)$), similar to Bubble Sort, but typically performs fewer data moves (swaps).
 
 
-Steps:: 
+Steps:
 1.  Outer Loop: Start a loop that goes through the list from the first position (index 0) almost to the end. This loop marks the start of the unsorted part.
 2.  Find the Smallest: Set a variable called `min_index` equal to the index of the number at the current position (from the outer loop). Assume this is the smallest number for now.
 3.  Inner Loop: Start a second, inner loop that checks **all the positions after the current position (i.e., the rest of the unsorted part).
