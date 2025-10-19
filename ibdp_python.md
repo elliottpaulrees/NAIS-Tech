@@ -426,9 +426,10 @@ This activity requires you to read a file containing structured data and use nes
 
 # Lesson 6 - Searching and Sorting Algorithms
 
-Part 1: Understanding Searching Algorithms
+### Part 1: Understanding Searching Algorithms
 Searching is the process of finding a specific item within a data structure. We will analyze two common methods.
-Linear Search (Sequential Search)
+
+#### Linear Search (Sequential Search)
 The Linear Search algorithm checks every element in the list sequentially (one by one) until the target item is found or the end of the list is reached.
 - When to use: When the list is small or unsorted.
 - Efficiency: Slow and increases in time as the list of data increases in size. Represented as O(N).
@@ -438,7 +439,9 @@ Steps:
 - If they match, return the current index.
 - If not, continue to the next position.
 - If the loop finishes without finding the number, return -1.
-Binary Search
+  <BR>
+  
+#### Binary Search
 The Binary Search algorithm is significantly faster but requires the list to be sorted. It works by repeatedly dividing the search interval in half.
 - When to use: When the list is large and sorted.
 - Efficiency: Very fast. Represented as O(log n).
@@ -451,10 +454,12 @@ Steps:
 - If smaller, set low to middle + 1.
 - If larger, set high to middle - 1.
 - If not found, return -1.
-
-Part 2: Understanding Sorting Algorithms
+  
+<BR>
+### Part 2: Understanding Sorting Algorithms
 Sorting arranges a list of items into a specific order (ascending or descending).
-Bubble Sort
+
+#### bubble Sort
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 - When to use: Teaching purposes only.
 - Efficiency: Very slow — O(n²).
@@ -463,7 +468,8 @@ Steps:
 - Inner loop: Compare adjacent elements up to the unsorted part.
 - If the current element is greater than the next, swap them.
 - Repeat until the list is sorted.
-Selection Sort
+<BR>
+#### Selection Sort
 Selection Sort finds the smallest element in the unsorted part and swaps it with the current position.
 - Concept: Selects the smallest remaining item and moves it to its correct position.
 - Efficiency: Also O(n²), but fewer swaps than Bubble Sort.
@@ -475,7 +481,7 @@ Steps:
 - Swap the current element with the smallest found.
 - Repeat until the list is sorted.
 
-Part 3: Implementing the Algorithms
+###Part 3: Implementing the Algorithms
 Create a function for each algorithm that takes a 1D array and performs the corresponding search or sort.
 
 Let me know if you'd like help writing the actual code for these algorithms in Python, JavaScript, or another language!
