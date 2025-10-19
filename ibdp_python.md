@@ -438,7 +438,7 @@ Searching is the process of finding a specific item within a data structure. We 
 The Linear Search algorithm checks every element in the list sequentially (one by one) until the target item is found or the end of the list is reached.
 
 - When to use: When the list is small or unsorted.
-- Efficiency: Slow, as in the worst case, the computer must check $N$ items (where $N$ is the size of the list).
+- Efficiency: Slow and increases in time as the list of data increase in size and can be represented with O(N)
 
 Steps:
 1.  Start a loop to check every position (index) in the list, from the first position to the last position.
@@ -452,7 +452,7 @@ Steps:
 The Binary Search algorithm is significantly faster but has one strict requirement: the list must be sorted before searching can begin. It works by repeatedly dividing the search interval in half.
 
 - When to use: When the list is large and sorted.
-- Efficiency: Very fast. It quickly eliminates half the remaining items with each step.
+- Efficiency: Very fast. It quickly eliminates half the remaining items with each step and can be represented with ($O(\log n)$).
 
 
 Steps:
@@ -489,7 +489,7 @@ Steps:
 The Selection Sort algorithm improves slightly on Bubble Sort by minimizing the number of swaps. In each pass, it finds the smallest element from the unsorted portion of the list and swaps it with the element at the current position.
 
 - Concept: It "selects" the smallest remaining item and moves it to its correct sorted position.
-- Efficiency: Also slow ($O(n^2)$), similar to Bubble Sort, but typically performs fewer data moves (swaps).
+- Efficiency: Also slow O(n<sup>2</sup>), similar to Bubble Sort, but typically performs fewer data moves (swaps).
 
 
 Steps:
