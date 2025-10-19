@@ -304,16 +304,118 @@ This activity combines file handling, count-controlled loops, and list manipulat
 
 Task Requirements:
 
-File Input to Array: Read all the numerical data from the daily_temperatures.txt file and store it in a single Python list (1D array). Remember to handle the conversion of text strings to numbers!
+1. File Input to Array: Read all the numerical data from the daily_temperatures.txt file and store it in a single Python list (1D array). Remember to handle the conversion of text strings to numbers!
 
-Yearly Statistics: Using loops, iterate through the full array to calculate and display the following for the entire year:
+2. Yearly Statistics: Using loops, iterate through the full array to calculate and display the following for the entire year:
 
-The Highest recorded daily temperature.
+- The Highest recorded daily temperature.
 
-The Lowest recorded daily temperature.
+- The Lowest recorded daily temperature.
 
-The Average daily temperature for the entire year.
+- The Average daily temperature for the entire year.
 
-Monthly Averages List: Create a new, separate list that stores the average temperature for each of the 12 months.
+3. Monthly Averages List: Create a new, separate list that stores the average temperature for each of the 12 months.
 
 Hint: For simplicity, assume the data is exactly 365 days and that the first 30 days are Month 1, the next 30 days are Month 2, and so on. (You will need to adjust your loop structure to process the data in chunks).
+
+
+
+
+
+# Lesson 5 - Two-Dimensional Arrays (Nested Lists)
+
+A two-dimensional (2D) array, often called a nested list in Python, is a list of lists. It is the perfect structure for representing data that is organized in rows and columns, such much as tables, grids, or matrices.
+
+In a 2D array, data is addressed using two indices:
+
+1. The first index specifies the Row.
+
+2. The second index specifies the Column.
+
+
+```python
+### Example 1: Creating and Accessing a 2D Array
+# A 2D array representing student data (rows) and their scores (columns)
+student_scores = [
+    [85, 78, 92],  # Row 0: Student 1 scores
+    [90, 82, 87],  # Row 1: Student 2 scores
+    [75, 85, 80]   # Row 2: Student 3 scores
+]
+
+# 1. Accessing a specific element (Row 1, Column 2)
+# Student 2's History score (87)
+score = student_scores[1][2]
+print("Student 2's History score is: " + str(score))
+
+# 2. Accessing an entire row (Row 0)
+# All scores for Student 1
+student_1_scores = student_scores[0]
+print("Student 1's scores: " + str(student_1_scores))
+
+# 3. Finding the dimensions
+num_rows = len(student_scores)
+num_cols = len(student_scores[0]) # Length of the first inner list
+print("The array has " + str(num_rows) + " rows and " + str(num_cols) + " columns.")
+```
+
+Example 2: Looping Through a 2D Array (Nested Loops)
+
+To process every item in a 2D array, you must use nested loops:
+
+1. Outer Loop: Iterates through the rows.
+
+2. Inner Loop: Iterates through the columns (elements within the current row).
+
+```python
+student_scores = [
+    [85, 78, 92],
+    [90, 82, 87],
+    [75, 85, 80]
+]
+
+# Outer loop iterates through the rows (i = 0, 1, 2)
+for i in range(len(student_scores)):
+    print("\n--- Processing Student " + str(i + 1) + " ---")
+    
+    # Inner loop iterates through the columns (j = 0, 1, 2) of the current row
+    for j in range(len(student_scores[i])):
+        score = student_scores[i][j]
+        output = "Score at Row " + str(i) + ", Column " + str(j) + " is: " + str(score)
+        print(output)
+```
+
+
+### Activity: Analyzing Student Grades with 2D Arrays
+
+This activity requires you to read a file containing structured data and use nested lists and loops to perform complex analysis. The file student_grades.txt contains 10 rows, where each row represents a student and contains five comma-separated scores for five different subjects.
+
+#### Task Requirements:
+
+1. File Input to 2D Array:
+
+- Read the data from student_grades.txt.
+
+- Create a 2D Array (list of lists) where each inner list contains the five numerical scores for one student.
+
+= Hint: You will need to process each line, split it by the comma separator, and convert each resulting string into an integer.
+
+2. Calculate Student Subject Grades:
+
+- Create a function (or a section of code) that loops through the 2D array.
+
+- For each student's score in each subject, determine and print their letter grade (A, B, C, D, or F) using the following scale:
+
+    - >80: A
+    - 70-79: B
+    - 60-69: C
+    - 50-59: D
+    - <50: f
+
+
+3. Calculate Student Average Scores:
+
+- Using the nested loops, calculate the average score for each student across all five subjects.
+
+- Store these 10 average scores in a separate 1D list of averages.
+
+- Print each student's final average score clearly.
