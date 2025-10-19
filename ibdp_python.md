@@ -320,6 +320,7 @@ Hint: For simplicity, assume the data is exactly 365 days and that the first 30 
 
 
 
+<hr>
 
 
 # Lesson 5 - Two-Dimensional Arrays (Nested Lists)
@@ -421,6 +422,7 @@ This activity requires you to read a file containing structured data and use nes
     - Print each student's final average score clearly.
 
 
+<hr>
 
 
 # Lesson 6 - Searching and Sorting Algorithms
@@ -438,7 +440,7 @@ The Linear Search algorithm checks every element in the list sequentially (one b
 - When to use: When the list is small or unsorted.
 - Efficiency: Slow, as in the worst case, the computer must check $N$ items (where $N$ is the size of the list).
 
-#### Steps: 
+Steps:
 1.  Start a loop to check every position (index) in the list, from the first position to the last position.
 2.  Inside the loop, compare the number at the current position with the `target_value` you are looking for.
 3.  IF they are the same number, stop the loop and give back the current position (index).
@@ -453,7 +455,7 @@ The Binary Search algorithm is significantly faster but has one strict requireme
 - Efficiency: Very fast. It quickly eliminates half the remaining items with each step.
 
 
-#### Steps: 
+Steps:
 1.  Start Pointers: Create a variable called `low` and set its value to the first position of the list (index 0).
 2.  Create a second variable called `high` and set its value to the last position (index) of the list.
 3.  Search Loop: Start a loop that **continues to run** as long as the `low` number is smaller than or equal to the `high` number.
@@ -473,7 +475,7 @@ The Bubble Sort algorithm is the simplest sorting method to understand. It repea
 - When to use: Only for teaching purposes. It is never used in real-world applications.
 - Efficiency: Extremely slow ($O(n^2)$), especially on large lists.
 
-#### Steps: 
+Steps:
 1.  Outer Loop (Passes):Start the main loop that controls how many times you check the list. This loop repeats almost the total length of the list.
 2.  Inner Loop (Comparisons): Inside the first loop, start a second, nested loop. This loop checks numbers from the very start of the list up to the end of the **unsorted part**.
 3.  Compare: Look at two numbers that are right next to each other: the current number (j) and the number after it (j + 1).
@@ -490,7 +492,7 @@ The Selection Sort algorithm improves slightly on Bubble Sort by minimizing the 
 - Efficiency: Also slow ($O(n^2)$), similar to Bubble Sort, but typically performs fewer data moves (swaps).
 
 
-#### Steps: 
+Steps:: 
 1.  Outer Loop: Start a loop that goes through the list from the first position (index 0) almost to the end. This loop marks the start of the unsorted part.
 2.  Find the Smallest: Set a variable called `min_index` equal to the index of the number at the current position (from the outer loop). Assume this is the smallest number for now.
 3.  Inner Loop: Start a second, inner loop that checks **all the positions after the current position (i.e., the rest of the unsorted part).
