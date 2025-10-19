@@ -178,8 +178,9 @@ Probability (Number X) = (Count of X) / (Total Number of Rolls)
 To express this as a percentage, you simply multiply the result by 100:
 
 Percentage (Number X) = (Count of X / Total Number of Rolls) * 100
-
-
+ 
+ 
+ 
 ### Condition-Controlled Loop Analysis
 
 This loop is used when the number of repetitions is unknown because it depends on an external condition (like a goal being reached or user input).
@@ -217,6 +218,8 @@ print("-" * 30)
 print("Goal achieved in " + str(years) + " years! Final balance: $" + str(round(balance, 2)))
 ```
 
+
+   
 ### Activity 2 - Use a condition controlled loop to create a game of Rockm Paper, Scissors!
 
 Build a game of Rock, Paper, Scissors against the computer. The game continues until either the player or the computer wins 3 rounds. Display the score after each round. Each part of the program should be split into functions!
