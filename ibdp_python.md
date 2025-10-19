@@ -226,4 +226,94 @@ Build a game of Rock, Paper, Scissors against the computer. The game continues u
 
 
 
+
 <hr>
+
+
+# Lesson 4 - Work with 1D Arrays
+
+In programming, an array (often called a list in Python) is a structure used to store a collection of related data items under a single variable name. These structures are crucial for organizing data and processing large amounts of information efficiently using loops.
+
+## The Concept of a 1D Array
+
+A one-dimensional (1D) array is a linear structure, like a single row or column. Each item in the array is located by its index (or position), which starts counting from zero (0).
+
+### Example 1: Creating and Accessing a 1D Array
+
+```python
+# 1. Creating a 1D Array (List)
+fruit_basket = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig']
+
+# 2. Finding the size (length) of the array
+basket_size = len(fruit_basket)
+print("The basket contains " + str(basket_size) + " items.") # Output: 6
+
+# 3. Accessing items by index
+print("The first fruit is: " + fruit_basket[0])  # Output: Apple (Index 0)
+print("The third fruit is: " + fruit_basket[2])  # Output: Cherry
+
+# 4. Accessing the last item (using negative indexing)
+print("The last fruit is: " + fruit_basket[-1]) # Output: Fig
+
+# 5. Modifying an item
+fruit_basket[3] = 'Durian'
+print("The item at index 3 is now: " + fruit_basket[3]) # Output: Durian
+```
+
+
+
+### Example 2: Looping Through a 1D Array
+
+We use the skills learned in the previous lesson (loops) to process every item in the array. This is how we find totals, averages, or maximum values.
+
+#### Looping by Value
+This method is used when you only need to look at the value of each element.
+
+```python
+shopping_costs = [12.50, 4.99, 8.75, 22.00, 1.50]
+total_cost = 0
+
+print("--- Calculating Total Cost ---")
+# The 'for' loop iterates directly over the values in the list.
+for item_cost in shopping_costs:
+    total_cost = total_cost + item_cost
+    print("Adding cost: $" + str(item_cost) + " | Current Total: $" + str(round(total_cost, 2)))
+
+print("\nFINAL TOTAL COST: $" + str(round(total_cost, 2)))
+```
+####  Looping by Index (Necessary for modification or parallel arrays)
+This method is used when you need to know the index number (position) of the element you are processing.
+
+```python
+student_names = ["Alice", "Bob", "Charlie", "Diana"]
+
+print("--- Listing Students by Number ---")
+# We loop using 'range(len(array))' to generate the indices: 0, 1, 2, 3
+for index in range(len(student_names)):
+    # We use the index to access the value: student_names[index]
+    student_number = index + 1
+    
+    output = "Student " + str(student_number) + " is " + student_names[index]
+    print(output)
+```
+
+
+### Activity 2 - Analyzing Temperature Data with 1D Arrays
+
+This activity combines file handling, count-controlled loops, and list manipulation. The file daily_temperatures.txt contains one year of daily temperature readings, one per line. We will use a one-dimensional array (list) to store and process this data.
+
+Task Requirements:
+
+File Input to Array: Read all the numerical data from the daily_temperatures.txt file and store it in a single Python list (1D array). Remember to handle the conversion of text strings to numbers!
+
+Yearly Statistics: Using loops, iterate through the full array to calculate and display the following for the entire year:
+
+The Highest recorded daily temperature.
+
+The Lowest recorded daily temperature.
+
+The Average daily temperature for the entire year.
+
+Monthly Averages List: Create a new, separate list that stores the average temperature for each of the 12 months.
+
+Hint: For simplicity, assume the data is exactly 365 days and that the first 30 days are Month 1, the next 30 days are Month 2, and so on. (You will need to adjust your loop structure to process the data in chunks).
