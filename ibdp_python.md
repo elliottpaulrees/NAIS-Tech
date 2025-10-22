@@ -490,4 +490,8 @@ Create a function for each algorithm that takes a 1D array and performs the corr
 
 Let me know if you'd like help writing the actual code for these algorithms in Python, JavaScript, or another language!
 
+
+## Extension:
+Ammend a searching algorithm and a sorting algorithm to work on a two dimensional array.
+
 <hr>
