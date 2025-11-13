@@ -243,7 +243,7 @@ www.google.com becomes: (using the ASCII codes)
 <img src="/images/illustrations/hexurl.png" width="50%" height="auto">
 </p>
 
-The percentage symbol denotes that hexadecimal values are used. Hexadecimal values are used to represent addresses of files and web pages to improve security.  A user is protected from accessing a fake website when he is asked to use a hexadecimal URL rather than a URL with letters that could be misleading. 
+The percentage (%) symbol denotes that hexadecimal values are used. Hexadecimal values are used to represent addresses of files and web pages to improve security.  A user is protected from accessing a fake website when he is asked to use a hexadecimal URL rather than a URL with letters that could be misleading. 
 
 
 ### Assembly code and machine code
