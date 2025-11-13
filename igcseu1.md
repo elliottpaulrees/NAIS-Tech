@@ -1,4 +1,5 @@
-<img width="3263" height="31" alt="image" src="https://github.com/user-attachments/assets/2858218d-a883-4c6d-b1c5-03aa0df85f68" /><img width="1218" height="31" alt="image" src="https://github.com/user-attachments/assets/2af7d130-3ba9-4f0c-8307-af0c40a5bac2" />---
+<img width="3263" height="31" alt="image" src="https://github.com/user-attachments/assets/2858218d-a883-4c6d-b1c5-03aa0df85f68" /><img width="1218" height="31" alt="image" src="https://github.com/user-attachments/assets/2af7d130-3ba9-4f0c-8307-af0c40a5bac2" />
+---
 title: IGCSE Computer Science
 layout: page
 description: About
