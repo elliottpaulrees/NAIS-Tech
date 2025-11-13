@@ -5,7 +5,7 @@ description: About
 bodyClass: page-about
 ---
 # Computer Systems Modules:
-- [Data Representation](\y7u1)
+- [Data Representation](\IGCSE-DataRep)
 - Data transmission
 - Hardware
 - Software
