@@ -64,8 +64,7 @@ This representation is now used for representing the size of RAM modules only. A
 <img src="/images/illustrations/converting.png" width="50%" height="auto">
 </p>
 
-### Watch Video below for demo on how to convert:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=9RVaz_WUlWn9pzil" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 # Lesson 2 Binary addition
@@ -108,10 +107,6 @@ Another example:
 <img src="/images/illustrations/binary addition 2.png" width="50%" height="auto">
 </p>
 
-
-### Watch Video below:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iAxeigunq3I?si=Zl2MbTtDVHOORFTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Overflow error
@@ -187,8 +182,6 @@ Hexadecimal numbers can be converted to the denary system by using the place val
 </p>
 
   
-### Watch Video below for a demo:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/duBPL-3hreI?si=KL0tYF_lhMC8IWps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Application of the hexadecimal system
 
@@ -299,11 +292,6 @@ Arithmetic left shifts are performed similarly to logical left shifts. All bits 
 <img src="/images/illustrations/leftshift.png" width="50%" height="auto">
 </p>
 
-
-
-### Watch Video below:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ml1zwSgfZ7g?si=v0b6X46SwUUigquI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 # Lesson 5 two's complements
 
 ## Lesson Objective:
@@ -374,7 +362,3 @@ Converting the sum 1111 into denary number,
 -8+4+2+1=-1
 
 
-
-
-### Watch Video below:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PhNzIphrP80?si=GninTLBNGUqNgyV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
