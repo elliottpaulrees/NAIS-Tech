@@ -123,6 +123,12 @@ body hr {
   margin: 3em 0;
 }
 
+iframe {
+    width: 100%;
+    height: 80vh; /* Adjust height relative to viewport */
+    border: none;
+}
+
 
 .highlight {
   background-color: #f6f8fa;
